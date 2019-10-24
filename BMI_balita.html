@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Medical Lianus</title>
-  <link rel="stylesheet" type="text/css" href="berita.css">
+  <link rel="stylesheet" type="text/css" href="BMI.css">
 </head>
 <body>
 
@@ -52,11 +52,18 @@
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h1>
-        <b>Kiat Menjaga Kesehatan Jantung bagi Lansia</b>
+      <h1 style="text-align: center;">
+        <b><i>KALKULATOR KESEHATAN BALITA</i></b>
       </h1>
-      <p>12 September 2019</p>
-      <img src="Picture/ibu.jpg" alt="" width="900px" height="400px">
+      <p style="line-height: 20px;">
+        Status gizi baduta merupakan keadaan kesehatan anak yang perlu adanya 
+        pemantauan dengan indeks berat badan menurut umur (BB/U), tinggi badan menurut 
+        umur (TB/U), dan berat badan menurut tinggi badan (BB/TB). Pemantauan status 
+        gizi anak dibawah dua tahun sangat penting dilakukan untuk melihat tumbuh kembang 
+        anak mulai dari umur 0-24 bulan karena pada usia ini sangat penting untuk menentukan 
+        masa depan anak. Untuk mengetahui perkembangan status gizi anak dapat menggunakan 
+        kalkulator dibawah ini :
+      </p>
     </div>
     <div class="sosmed">
       <div class="cardSos">
@@ -72,35 +79,39 @@
         <p id="font">Twitter</p>
       </div>
     </div>
-    <div class="paragraf">
-      <p>
-        Jember, Presiden ke-3 RI BJ Habibie tutup usia petang
-        kemarin, Rabu (11/9). Pria dijuluki Bapak Teknologi Indonesia itu
-        sebelumnya pernah mengalami masalah pada jantungnya, yakni
-        kebocoran klep jantung. Lalu bagaimana cara 
-        menjaga kesehatan jantung bagi lansia? 
-      </p>
-      <p>
-          Penyakit jantung hingga kini adalah salah satu penyebab kematian
-          tersering di dunia. Di Amerika, satu dari empat orang meninggal akibat
-          penyakit jantung. Demikian pula di Indonesia di mana jumlah penderita 
-          penyakit jantung - seperti tekanan darah tinggi, penyakit jantung
-          iskemik, serangan jantung, peyumbatan pembuluh darah - terus meningkat.
-      </p>
-      <p>
-        <strong>1. Ketahui risiko kesehatan</strong><br>
-        Saat menginjak usia 40-75 tahun, anda harus melakukan pemeriksaan 
-        kesehatan rutin minimal setahun sekali. Pemeriksaan ini bertujuan untuk
-        mengetahui adakah faktor risiko penyakit jantung dalam diri anda. 
-        Dokter akan menilai tingkat risiko tersebut dan menginformasikan 
-        langkah spesifik penanganannya. 
-      </p>
-      <p>
-        <strong>2. Tetap aktif</strong><br>
-        Aktivitas fisik setiap hari dapat meningkatkan kualitas kesehatan anda
-        secara umum dan menurunkan risiko penyakit jantung. Tak hanya penyakit jantung,
-        stroke dan penyakit gula jug dapat dicegah dengan rutin melakukan Aktivitas fisik.
-      </p>
+    <div class="form">
+      <form>
+      <table border="5" style="border-radius:10px;border-color:#53ee7d" cellpadding="7" cellspacing="0">
+        <tr style="background-color: #53ee7d ;color: white">
+          <th colspan="2">-------Berat badan Ideal Balita-------</th>
+        </tr>
+        <tr>
+          <td id="td-3"><label >Umur Bulan</label></td>
+          <td><input type="text" name="Umur Bulan" placeholder="Umur Bulan">
+        </tr>
+        <tr>
+          <td><label >Tinggi Badan</label></td> 
+          <td><input type="text" name="Tinggi Badan" placeholder="Tinggi Badan">
+          <label>Cm</label></td>
+        </tr>
+        <tr>
+          <td id="td-3"><label >Berat Badan</label></td>
+          <td><input type="text" name="Berat Badan" placeholder="Berat Badan">
+          <label>Kg</label></td>
+        </tr>
+        <tr>
+          <td id="td-3"><label >Jenis Kelamin</label></td>
+          <td>
+            <label><input type="radio" name="Jenis Kelamin" value="laki-laki">Laki- Laki</label>
+            <label><input type="radio" name="Jenis Kelamin" value="perempuan">Perempuan</label>
+          </td>
+        </tr>   
+        <tr>
+          <td colspan="2" style="text-align:center;"><button style="background-color:#53ee7d" type="submit" value="Hitung">Hitung</button>
+          <input style="background-color:darkgray" type="reset" value="Ulangi" name="Ulangi"></td>
+        </tr>
+      </table>
+      </form>
     </div>
   </div>
   <div class="card">

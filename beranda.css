@@ -1,4 +1,6 @@
 * {
+  padding: 0px;
+  margin: 0 px;
   font-family: Arial;
   box-sizing: border-box;
 }
@@ -136,39 +138,6 @@ li.dropdown {
   font-size: 30px;
   color: white;
 
-}
-
-/* author */
-.author {
-  padding: 20px;
-  background: white;
-  margin-top: 10px;
-  border: 20px double rgb(25, 150, 233);
-  border-radius: 10px;
-}
-
-.author h2{
-  position: relative;
-  top: 0px;
-  font-family: arial;
-}
-
-
-.imgauthor img{
-  float: left;
-  margin-left: 190px;
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  background: red;
-}
-
-.imgauthor2 img{
-  margin-left: 270px;
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  background: red;
 }
 
 /* Footer */
