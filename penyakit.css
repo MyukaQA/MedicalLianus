@@ -33,7 +33,6 @@ input{
 }
 
 /*navbar*/
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -85,93 +84,110 @@ ul {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
 /*section*/
 section{
     position: relative;
-    width: 80%;
-    height: 1200px;
-    box-shadow: 3px 2px 4px 3px;
-    margin: 5px auto;
-    text-align: center;
+    width: 100%;
+    height: 1090px;
 }
-/*left tabel*/
+
 .lefttabel{
     position: absolute;
-    top: 0px;
-    width: 49%;
-    height: 100%;
+    width:69%;
+    max-height: 900px;
+    padding: 20px 10px;
 
 }
-.iklan1 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-.h4 :hover{
-    font-size: 25px;
 
-}
-.iklan1{
-    width: 100%;
-    margin-top: 30px;
-    border-radius: 10px;
-    height: 350px;
-    position: relative;
+.content{
+    margin:35px auto;
+    text-align: center;
 }
 
-.iklan2{
-    width: 100%;
-    margin-top: 30px;
-    border-radius: 10px;
-    height: 350px;
-    position: relative;
+.iklan{
+    width: 350px;
 }
-.h4 {
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
+
+.iklan img{
+    width: 350px;
+    height: 120px;
 }
-.h4 a{
-    color: black;
+.articel{
+    width: 350px;
+    margin:10px 50px;
+    display: inline-block;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
+    min-height: 250px;
+}
+
+
+.contoh h3{
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+.contoh{
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.contoh p{
+    color:rgb(25, 150, 233);
+    text-align: right;
+}
+.contoh  a{
     text-decoration: none;
+}
+
+.contoh p :hover{
     font-size: 20px;
 }
-/**/
+
+/*right tabel*/
 .righttabel{
     position: absolute;
     right: 0px;
-    top: 0px;
-    width: 49%;
-    height: 100%;
-  
+    width: 30%;
+    margin-top: 20px;
+    border-left: 5px solid grey;
+    height: 1000px;
 }
 
+.topview{
+    text-align: center;
+    background-color: rgb(25, 150, 233);
+    border-radius: 10px;
+    margin: 10px;
+    height: 30px;
+}
+.kunjungi{
+    padding: 20px;
+    margin: 20px;
+    display: flexbox;
+    border-bottom: 1px solid gray;
+}
+.gambar img{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.gambar{
+    margin: 10px;
+}
+.teks{
+    text-align: left;
+    font-size: 20px;
 
-.gambar1{
-    width: 100%;
-    height: 175px;
-    margin-top: 10px;
-    border-radius: 10px;
-    position: relative;
 }
-.gambar1 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+.clear{
+    clear: left;
 }
 
-.gambar2{
-    width: 100%;
-    height: 170px;
-    position: relative;
-    margin-top: 5px;
-}
-.gambar2 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
 /*footer*/
 footer{
     position: relative;
