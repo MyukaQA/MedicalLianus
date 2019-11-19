@@ -1,0 +1,112 @@
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  border-right: 4px solid grey;
+}
+
+.sosmed{
+    margin-top: 20px;
+    float: left;
+    background: white;
+    width: 5%;
+    height: 170px;
+  }
+  
+.cardSos{
+    text-align: center;
+    width: 40px;
+    height: 55px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#font{
+    font-size: 8px;
+    margin-top: 1px;
+  }  
+  
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #ffffff;
+}
+
+.imgRight {
+    float: left;
+    margin-right: 5px;
+    border-radius: 10px;
+    
+}
+
+#BK{
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 10px;
+  }
+  
+#textKanan{
+    position: relative;
+    top: 13px;
+    left: 7px;
+  }
+  
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 70px;
+    background:linear-gradient(#248f40, #248f86, #24668f);
+    margin-top: 20px;
+}
+  
+.footerPic{
+    float: left;
+    margin-top: -45px;
+    margin-right: 30px;
+    width:270px; 
+    height:100px;
+}  
+
+  
+@media screen and (max-width:800px) {
+    .column {
+        width: 100%;
+    }
+
+    .footerPic {
+        margin-right: 70px;
+        margin-bottom: 20px;
+    }
+
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+        border: none;
+        border-top: 2px solid grey;
+    }
+
+    .textArticle {
+        margin-left: 50px;
+    }
+  }

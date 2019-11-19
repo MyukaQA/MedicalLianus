@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Lianus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/main-content.css">
+  <link rel="stylesheet" type="text/css" href="css/main-content-login.css">
+  <link rel="stylesheet" type="text/css" href="css/buttonLogin-login.css" >
+</head>
+<body>
+
+<!--Start Navbar-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active" style="background-color: green;">Menu Utama</a>
+  <a href="#CKIbuhamil">Tabel</a>
+  <a href="#ibu hamil">Kalkulator kesehatan Ibu Hamil</a>
+  <a href="#balita">Kalkulator kesehatan Balita</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+  <!--Start Button Login-->
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin: 0px; padding: 16px 20px; float: right;">Masuk</button>
+
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="Picture/icon ibu hamil.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Masukkan Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Masukkan Password" name="psw" required>
+          
+        <button type="submit">Masuk</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Ingat saya
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Kembali</button>
+        <span class="psw">Lupa<a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  <!--End Button Login-->
+
+  <!--Start Button Sign Up-->
+  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; margin: 0px; padding: 16px 20px; float: right;">Daftar</button>
+
+  <div id="id02" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+
+      <div class="container">
+        <h1>Daftar Akun</h1>
+        <p>Silahkan mengisi form yang disediakan</p>
+
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Masukkan Email" name="email" required>
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Masukkan Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Masukkan Password" name="psw" required>
+         
+        <label for="psw"><b>Ulangi Password</b></label>
+        <input type="password" placeholder="Masukkan Password" name="upsw" required>
+
+        <button type="submit">Daftar</button>
+
+        <label><input type="checkbox" checked="checked" name="remember"> Ingat saya</label>
+
+        <label><p>Dengan membuat akun ini anda telah setuju dengan Ketentuan dan Syarat kami.</p></label>
+
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Kembali</button>
+      </div>
+    </form>
+  </div>
+  <!--End Button Sign Up-->
+</div>
+<!--End Navbar-->
+
+<!--Start Main Content-->
+<!--Start Form Ibu Hamil-->
+<form id="ibu hamil">
+<table>
+  <tr>
+    <th style=" font-size: 20px; background-color: #4ca1c3 ;color: white; text-align: center;" colspan="2">Kalkulator Kesehatan Ibu Hamil</th>
+  </tr>
+  <tr>
+    <td><label for="">Tinggi Badan</label></td>
+    <td><input type="text" placeholder="Masukkan Tinggi Badan (Cm)"></td>
+  </tr>
+  <tr>
+    <td><label for="">Berat Badan</label></td>
+    <td><input type="text" placeholder="Masukkan Berat Badan (Kg)"></td>
+  </tr>
+  <tr>
+    <td><label>Pilih usia kehamilan saat ini</label></td>
+    <td><select name="usia">  
+      <option value="1-7">1-7 Minggu</option>
+      <option value="9">9 Minggu</option>
+      <option value="10">10 Minggu</option>
+      <option value="11">11 Minggu</option>
+      <option value="12">12 Minggu</option>
+      <option value="13">13 Minggu</option>
+      <option value="14">14 Minggu</option>
+      <option value="15">15 Minggu</option>
+      <option value="16">16 Minggu</option>
+      <option value="17">17 Minggu</option>
+      <option value="18">18 Minggu</option>
+      <option value="19">19 Minggu</option>
+      <option value="20">20 Minggu</option>
+      <option value="20">>21 Minggu</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:center;"><button style="background-color:green" type="submit" value="Hitung">Hitung</button>
+    <input style="background-color:darkgray" type="reset" value="Ulangi" name="Ulangi"></td>
+  </tr>
+</table>
+</form>
+<!--End Form Ibu Hamil-->
+
+<!--Start Form Balita-->
+<form id="balita"> 
+<table>
+  <tr>
+    <th style=" font-size: 20px; background-color: #aa4f12 ;color: white; text-align: center;" colspan="2">Kalkulator Kesehatan Balita</th>
+  </tr>
+  <tr>
+    <td><label for="">Umur Bulan</label></td>
+    <td><input type="text" placeholder="Masukkan Umur Bulan"></td>
+  </tr>
+  <tr>
+    <td><label for="">Tinggi Badan</label></td>
+    <td><input type="text" placeholder="Masukkan Tinggi Badan (Cm)"></td>
+  </tr>
+  <tr>
+    <td><label for="">Berat Badan</label></td>
+    <td><input type="text" placeholder="Masukkan Berat Badan (Kg)"></td>
+  </tr>
+  <tr>
+    <td><label for="">Jenis Kelamin</label></td>
+    <td><input type="radio" name="jenis_kelamin" value="laki-laki">Laki-laki
+    <input type="radio" name="jenis_kelamin" value="perempuan">Perempuan</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:center;"><button style="background-color:green" type="submit" value="Hitung">Hitung</button>
+    <input style="background-color:darkgray" type="reset" value="Ulangi" name="Ulangi"></td>
+  </tr>
+</table>
+</form>
+<!--End Form Balita-->
+
+<!--Start Form Catatan Kesehatan Ibu Hamil-->
+<form id="CKIbuhamil"> 
+<table>
+  <tr>
+    <th style=" font-size: 20px; background-color: #4012aa ;color: white; text-align: center;" colspan="2">Data Kesehatan Ibu Hamil</th>
+  </tr>
+  <tr>
+    <td><label for="">Tanggal</label></td>
+    <td><input type="date"></td>
+  </tr>
+  <tr>
+    <td><label for="">Keluhan Sekarang</label></td>
+    <td><input type="text" placeholder="Keluhan yang dialami"></td>
+  </tr>
+  <tr>
+    <td><label for="">Tekanan Darah</label></td>
+    <td><input type="text" placeholder="Tekanan darah saat ini (mmHg)"></td>
+  </tr>
+  <tr>
+    <td><label for="">Berat Badan</label></td>
+    <td><input type="text" placeholder="Masukkan Berat Badan (Kg)"></td>
+  </tr>
+  <tr>
+    <td><label for="">Umur Kehamilan</label></td>
+    <td><input type="text" placeholder="Umur Kehamilan (Minggu)"></td>
+  </tr>
+  <tr>
+    <td><label for="">Tinggi Fundus</label></td>
+    <td><input type="text" placeholder="Tinggi Fundus (Cm)"></td>
+  </tr>
+  <tr>
+    <td><label for="">Letak Janin</label></td>
+    <td><input type="text" placeholder="Letak Janin (Kep/Su/Li)"></td>
+  </tr>
+  <tr>
+    <td><label for="">Denyut Jantung</label></td>
+    <td><input type="text" placeholder="Denyut Jantung (Janin/Menit)"></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:center;"><button style="background-color:green" type="submit" value="Hitung">Masukkan Data</button>
+    <input style="background-color:darkgray" type="reset" value="Ulangi" name="Ulangi"></td>
+  </tr>
+</table>
+</form>
+<!--End Form Catatan Kesehatan Ibu Hamil-->
+
+<table>
+  <tr>
+    <th>Tgl</th>
+    <th>Keluhan Sekarang</th>
+    <th>Tekanan Darah (mmHg)</th>
+    <th>Berat Badan  (Kg)</th>
+    <th>Umur Kehamilan</th>
+    <th>Tinggi Fundus (Cm)</th>
+    <th>Letak Janin Kep/Su/Li</th>
+    <th>Denyut Jantung Janin/Menit</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<!--Start Main Content-->
+
+
+
+<!--Start Footer-->
+<div class="footer">
+  <div>
+    <img class="footerPic" src="Picture/Group 2.png">
+  </div>
+
+  <span>
+    <strong>Medical Lianus merupakan Website penyedia informasi untuk kesehatan ibu-ibu Hamil dan balita.</strong><br>
+    <strong>Copyright <img style="width: 12px; height: 12px;" src="Picture/copyright.png">2019 LIANUS Corporation. All right reserved.</strong>
+  </span>
+</div>
+<!--End Footer-->
+
+
+
+
+
+
+<script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  //Navbar
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  //Navbar
+
+//Button Login
+var modal = document.getElementById('id01');
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//Button Login
+
+</script>
+
+
+</body>
+</html>
